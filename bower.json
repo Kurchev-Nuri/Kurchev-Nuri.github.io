@@ -1,0 +1,26 @@
+{
+  "name": "algotecture",
+  "description": "web-site",
+  "main": "index.js",
+  "authors": [
+    "Nuri"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "algo",
+    "algotecture"
+  ],
+  "homepage": "http://algotecture.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "fontawesome": "^5.0.8"
+  }
+}
