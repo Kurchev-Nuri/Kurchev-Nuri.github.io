@@ -14,8 +14,26 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116006034-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-116006034-1');
+	</script>
+
 </head>
-<body class="is-home">
+<body>
+	<div id="css-preloader">
+		<div class="cssload-loader">
+			<div class="cssload-inner cssload-one"></div>	 
+			<div class="cssload-inner cssload-two"></div>
+			<div class="cssload-inner cssload-three"></div>	
+		</div>
+	</div>	
 	<header>
 		<div class="top-panel">
 			<div class="top-panel-content">
@@ -43,14 +61,18 @@
 			</div> 			
 			<div class="content-aside-item">
 				<div class="content-aside-defention">
-					We radically simplify collaborative design, construction and operation processes by providing an intelligent framework.
+					We radically simplify collaborative design, construction and operation processes 
+					by providing an intelligent framework.
 				</div>				
 			</div> 			
 		</div>
-		<div class="content-image">
-			<div class="content-image-item">
+		<div class="content-media">
+			<div class="content-media-item">
 				<img src="img/rosa.jpg" />
 			</div>
+			<div class="content-media-play-button-wrapper" id="greeting-video">
+				<div class="content-media-play-button"></div>
+			</div>	
 		</div>
 	</section>			
 	<section class="twitter-news">
@@ -69,17 +91,21 @@
 	<footer class="footer">
 		<div class="footer-content">
 			<div class="footer-copyright black-logo">
-				© 2014-present, <a href="/"><span>Algo</span>tecture.</a> 
-				All Rights Reserved. 
-				<a href="mailto:algorithmic.architecture@gmail.com">
-						algorithmic.architecture@gmail.com 
-				</a>
+				© 2014-present, <a href="/"><span>Algo</span>tecture.</a> All Rights Reserved. 
+				<a href="mailto:algorithmic.architecture@gmail.com">algorithmic.architecture@gmail.com</a>
 			</div>	
 		</div>
 	</footer>
 
+	<div class="algo-video-popover">
+		<div class="algo-video-popover-close-button"></div>
+		<div class="algo-video-popover-content">
+			<iframe src="https://www.youtube.com/embed/z1chFB-dalU" frameborder="0" allowfullscreen="" class="algo-video-popover-content-youtub"></iframe>
+		</div>
+	</div>
+
 	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
+	<script src="js/main.min.js"></script>
 
 </body>
 </html>
